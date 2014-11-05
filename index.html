@@ -1,0 +1,63 @@
+	<!DOCTYPE>
+	<html>
+		<head>
+		<meta charset='utf-8'>
+		<meta name='description' content='Letters to Kiddo'>
+		<meta name'author' content='sven10'>
+		<link href='css/bootstrap.min.css' rel='stylesheet'>
+		<link href='css/amelin/bootstrap.min.css' rel='stylesheet'>
+		<link href='css/font-awesome.min.css' rel='stylesheet'>
+		<link href='css/style.css' rel='stylesheet'>
+		<script src='js/bootstrap.min.js'></script>
+		<script src='js/jquery-2.1.1.min.js'></script>
+
+		<title>Hugbúnaðarfræðis lokapróf...</title>
+	</head>
+		<body>
+			<div class='letter'>
+<h1 id="lokapróf-hugbúnaðarfræði">Lokapróf Hugbúnaðarfræði</h1>
+<h3 id="hlutir-sem-koma-í-seinni-hluta">Hlutir sem koma í seinni hluta</h3>
+<ul>
+<li>Útgáfustjórnun (version control)</li>
+<li>Samstæðustjórnun (configuration management)</li>
+<li>Sjálfvirknivæðing á byggingarferli (build process)</li>
+<li>Próafanadrifin þróun (test driven development)</li>
+<li>Sjálfvirkar og handvirkar prófanir (testing)</li>
+<li>Sammfelld þáttun (continious integration)</li>
+<li>Samfelldar útgáfur (continious delivery)</li>
+</ul>
+<h4 id="continious-integration">Continious Integration</h4>
+<p>Continious integration server er alveg clean, þannig sjáum við skýrar dependency. Integration server er server eða virtual umhverfi sem er er sett upp í þeim eina tilgangi að vinna í ákveðnu umhverfi.</p>
+<h4 id="ferli">Ferli</h4>
+<pre><code>Devs    -&gt;  Version Control     -&gt;  Integration Test
+local       Git                     Travis
+
+
+-&gt;  Staging -&gt;  Production
+    Heroku      Client</code></pre>
+<h4 id="tól-og-aðferðir">Tól og aðferðir</h4>
+<ul>
+<li>Test - Junit og Selenium</li>
+<li>Build Script - Maven</li>
+<li>Version Control - Git</li>
+</ul>
+<h4 id="version-control-revision-control-source-control">Version Control = Revision Control = Source Control</h4>
+<p>Kerfi voru með lása, minna um það í dag. Hægt að track'a breytingar aftur í tímann.</p>
+<p><strong>Trunk</strong></p>
+<ul>
+<li>The unique line of development that is not a branch(sometimes also called a Baseline or mainline)</li>
+<li>Sonja segir a' þetta sé aðaldraslið, <em>what gonna do with all that junk, all that junk inside your trunk</em></li>
+</ul>
+<p><strong>Branch</strong></p>
+<ul>
+<li>Þá er unnið á annari útgáfu af dótinu, hægt að sameina seinna.</li>
+<li>Semí sandbox</li>
+</ul>
+<p><strong>Tag</strong></p>
+<ul>
+<li>Er svona snapshot eða eð. Getur séð hver staðan var á skrám á einhverjum tímapunkti</li>
+<li>Tagg er merkt eða skýrð sérstaklega.</li>
+</ul>
+		</div>
+	</body>
+</html>
