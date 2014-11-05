@@ -127,6 +127,19 @@ local       Git                     Travis
 <li>Deploy'a hugbúnaðinn</li>
 <li><em>annað...</em></li>
 </ul>
+<h4 id="hæðistjórnun---dependency-management">Hæðistjórnun - Dependency Management</h4>
+<ul>
+<li>Verður vandamál í stærri verkefnum</li>
+<li>Gera þetta manualy verður svakalega þrytt ef að við erum með 100 libs</li>
+<li>Libs geta dependað á önnur libs, en í mismunandi versionum</li>
+<li>Dependency manager er staða fyrir einn mann</li>
+<li>Bergþór bjó til Dependency Facism</li>
+<li>Dependency management = confiugration management</li>
+</ul>
+<p>Mikilvægt að að geyma integration database í spource control.</p>
+<p><strong>Run Inspection</strong> minkar flæknistig kóða, finnur duplicate kóða, hannar review.</p>
+<p><strong>Deply Software</strong> býr til artifakta( exe, dll, jar, etc), installar artifacta, restartar server. Gerir manni kleyft að vinna á deployable hugbúnaði á hvaða tímapunkti. Þegar build hefur keyrt verður að stage'a skrárnar(veit ekki hvað það þýðir), build ferlið deployar svo sjálfkrafa eða installar skrár í viðeigandi umhverfi.</p>
+<p><em>Anna:</em> Eins og t.d. búa til documentation.</p>
 		</div>
 	</body>
 </html>
