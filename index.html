@@ -179,6 +179,22 @@ local       Git                     Travis
 <li><strong>Spies</strong> eru stubs sem geyma upplýsingar um hvernig var kallað á þá. Ein tegund af spie er t.d. fyrir email þjónustu sem vistar hversu marga maila hann hefur sennt.</li>
 <li><strong>Mocks</strong> eru fyrirfram forritaðir(ég veit) með væntingum um köllin sem þeir gera ráð fyrir. Þeir geta kasstað exception ef þeir fá kall sem þeir eru ekki að búast við, og þeir eru athugaðir nokkuð þeir hafa ekki örugglega fengið öll köll sem þeir bjuggust við að fá.</li>
 </ul>
+<h4 id="focused-integration-test">Focused Integration Test</h4>
+<ul>
+<li>Prufa tengingu við ytri kerfi
+<ul>
+<li>Gagnasafn</li>
+<li>Vefþjónustur</li>
+<li>Skráarkerfi</li>
+<li>Samskipti á netkerfi</li>
+</ul></li>
+<li>Hægari en unit test</li>
+<li>Erfiðari að setja upp og halda utan um</li>
+<li>Fjöldi prófana ætti að vera í hlutföllum við týpur af ytri tengingum sem forritið hefur
+<ul>
+<li>Ef það þarf mörg Integration test, að þá er það oft merki um hönnunar vandamál</li>
+</ul></li>
+</ul>
 		</div>
 	</body>
 </html>
