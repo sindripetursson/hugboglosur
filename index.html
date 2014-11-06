@@ -197,6 +197,60 @@ local       Git                     Travis
 </ul>
 <h4 id="mælingar">Mælingar</h4>
 <p>Sýnir hversu mikið af kóðanum er testaður. Algengt er að fyrirtæki setja kröfu um 80% af code coverage. Ýmis tól notuð.. Eins og cobertura.</p>
+<h3 id="functional-tests---virkniprófanir">Functional Tests - Virkniprófanir</h3>
+<h4 id="customer-tests">Customer Tests</h4>
+<ul>
+<li>Customers eru með sérþekkingu sem forritararnir hafa ekki</li>
+<li>Customer Tests hjálpa viðskiptavininum að communicate'a sérþekkinguna sína</li>
+<li>Customer test eru í raun examples sem forritararnir geta breytt í automated test</li>
+<li>Follow the process
+<ul>
+<li><em>Describe, Demonstrate, Develop</em></li>
+</ul></li>
+</ul>
+<h4 id="end-to-edn-tests">End to edn tests</h4>
+<p>Prófa kerfið frá enda til enda. Frá UI yfir í gangasafn og tilbaka. Þau geta verið hæg og brothætt. Fínt að gera frekar mörg unit test og svo nokkur svona algeng tilfelli fyrir end to end test.</p>
+<h4 id="automated-functional-testing">Automated functional testing</h4>
+<p>tests the UI, test against API, &quot;Scripting&quot;, native language (xUnit).</p>
+<h4 id="automated-ui-tests">Automated UI Tests</h4>
+<p><strong>Ókostir</strong></p>
+<ul>
+<li>Háð viðmóti</li>
+<li>heftir breytingar</li>
+<li>hægvirk</li>
+<li>ekki hentug fyrir TDD</li>
+</ul>
+<p><strong>Kostir</strong></p>
+<ul>
+<li>Auðveldari að læra</li>
+<li>Ekki eins mikil special skill kröfur</li>
+<li>Excercises the whole stack</li>
+<li>Þetta eru í raun einu præofin sem fara í gegnum allt kerfið. Eins og notandi eða eð.</li>
+</ul>
+<h4 id="automated-api-testing">Automated API Testing</h4>
+<ul>
+<li>Disadvantages
+<ul>
+<li><em>Prófar ekki notendaviðmót</em></li>
+<li><em>Gerir kröfu um forritunarþekkingu</em></li>
+</ul></li>
+<li>Advantages
+<ul>
+<li>Hröð</li>
+<li><em>Hægt að gera áður funtionality (A-TDD)</em></li>
+<li><em>Stenst breytingar</em></li>
+<li><em>Kvetur til decoupled hönnunar</em></li>
+</ul></li>
+<li>Fín fyrir
+<ul>
+<li><em>Business rules</em></li>
+<li><em>Data Intensive functionality</em></li>
+</ul></li>
+<li>Ekki fín fyrir
+<ul>
+<li><em>High Integration</em></li>
+</ul></li>
+</ul>
 		</div>
 	</body>
 </html>
