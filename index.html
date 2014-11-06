@@ -152,6 +152,22 @@ local       Git                     Travis
 </ol>
 <p><strong>Manual Integration</strong> - Hefur integration token sem hver sækir sem ætlar að fara intergrate'a. Á meðan þú ert með tokenið, sem getur verið brúða eða whatever, oftast hefur fólk bara 15-30 mínútur til að integrate'a.</p>
 <p><strong>Continious Integration</strong> - Er server sem er stöðugt að athuga nokkuð að það séu komnar einhverjar breitingar. Ef þær eru komnar að þá keyrir hann build scripturnar og gefur svo grænt ef það er allt í lagi. Peoples eru búin að þróa allskonar visual feedback, eins og lava lampa og traffík ljós.</p>
+<p><strong>Verðmæti CI</strong></p>
+<ul>
+<li>Minnkuð áhætta</li>
+<li>Bombar út deployable shitti hvenar sem er</li>
+<li>Hannes skrifar ekki kóða í kaós</li>
+</ul>
+<h3 id="good-ci-practices">Good CI Practices</h3>
+<ul>
+<li>Commitaðu kóða oft</li>
+<li>Ekki commita brotnum kóða</li>
+<li>Lagaðu brotin build <strong>STRAXZ</strong></li>
+<li>Skrifaðu automated developer test, tryggðu að kóðinn þinn keyri rétt</li>
+<li>Öll test og inspections verða að pass</li>
+<li>Gerðu private build, pullaðu öllu og tékkaðu nokkuð það keyri ekki örugglega locally</li>
+<li>Passaðu að fá ekki brotin kóða, þú tapar tíma á að pulla brotnu shitti</li>
+</ul>
 		</div>
 	</body>
 </html>
