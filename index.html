@@ -140,6 +140,14 @@ local       Git                     Travis
 <p><strong>Run Inspection</strong> minkar flæknistig kóða, finnur duplicate kóða, hannar review.</p>
 <p><strong>Deply Software</strong> býr til artifakta( exe, dll, jar, etc), installar artifacta, restartar server. Gerir manni kleyft að vinna á deployable hugbúnaði á hvaða tímapunkti. Þegar build hefur keyrt verður að stage'a skrárnar(veit ekki hvað það þýðir), build ferlið deployar svo sjálfkrafa eða installar skrár í viðeigandi umhverfi.</p>
 <p><em>Anna:</em> Eins og t.d. búa til documentation.</p>
+<h3 id="continious-integration-1">Continious Integration</h3>
+<p>Passa að liggja ekki á gömlum kóða, byrja daginn á því. Gerir breitingar, pullar, ef kóðinn þinn keyrir enþá að þá pusharu.</p>
+<p>Það er mjög erfitt að skrifa test fyrir klasa sem var ekki skrifaður með test í huga. Láta forritið stækka með þér, eða build skriptuna eða eð. Hraðinn á buildunum skiptir máli. Mar er með build á sinni vél og á integration vélinni. Hæg test er oftast ástæðan fyrir hægum buildum. Ekki láta unit test sækja gögn af harðadisk eða úr gagnasafni. Unit test eiga að keyra í minni.</p>
+<h4 id="atriði-sem-verða-að-vera-til-staðar-fyrir-integration-process">4 Atriði sem verða að vera til staðar fyrir Integration Process</h4>
+<ol style="list-style-type: decimal">
+<li>Tenging við version control repo</li>
+<li></li>
+</ol>
 		</div>
 	</body>
 </html>
