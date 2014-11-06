@@ -168,6 +168,17 @@ local       Git                     Travis
 <li>Gerðu private build, pullaðu öllu og tékkaðu nokkuð það keyri ekki örugglega locally</li>
 <li>Passaðu að fá ekki brotin kóða, þú tapar tíma á að pulla brotnu shitti</li>
 </ul>
+<h4 id="test-double">Test Double</h4>
+<p>SUT = System Under Test</p>
+<p>DOC = Dependent-on Component</p>
+<h3 id="test-doubles">Test Doubles</h3>
+<ul>
+<li><strong>Dummy</strong> objects eru sendir fram og tilbaka en aldrei í raun notaðir. Hafa vanalega bara það hlutverk að filla parametra.</li>
+<li><strong>Fake</strong> hafa í raun virkandi virkni, en stytta sér einhverjar leiðir og eru ekki æskilegar í production(GagnabankiIMinni t.d.)</li>
+<li><strong>Stubs</strong> skila &quot;canned&quot; svörum til fallakalla sem eru gerð í testi, en gera ekkert annað en bara það sem þau eru forrituð fyrir í prófuninni.</li>
+<li><strong>Spies</strong> eru stubs sem geyma upplýsingar um hvernig var kallað á þá. Ein tegund af spie er t.d. fyrir email þjónustu sem vistar hversu marga maila hann hefur sennt.</li>
+<li><strong>Mocks</strong> eru fyrirfram forritaðir(ég veit) með væntingum um köllin sem þeir gera ráð fyrir. Þeir geta kasstað exception ef þeir fá kall sem þeir eru ekki að búast við, og þeir eru athugaðir nokkuð þeir hafa ekki örugglega fengið öll köll sem þeir bjuggust við að fá.</li>
+</ul>
 		</div>
 	</body>
 </html>
